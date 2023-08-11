@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Helvetica;
+  margin: 0;
+}
+.logo b{
+ width: 100px;
+ height: 80px;
+ cursor: pointer;
+ }
+ 
+ nav{
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+ }
+ 
+ nav ul li a{
+     text-decoration: none;
+     color: #606163;
+ }
+ 
+ nav ul li a:hover{
+     color: #ff4321;
+ } 
+
+ .d {
+  display: flex;
+  align-items: center;
+}
+
+
+ .align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ @media only screen and (max-width: 768px) {
+  nav {
+    padding: 16px 0;
+  }
+
+
+  .icons{
+    display: none;
+  }
+
+ 
+  .logob{
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    } 
+  }
+
+/* Intro */
+.intro {
+  height: calc(100vh - 150);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: lightgray;
+  background-image: url('wallet.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  background-size: 100% 100%;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.h3 {
+text-align: center;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+ /*footer*/
+</style>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <img src="logo1.png" height="200px" width="250px" class="logob">
+      <ul>
+        <li><a href="Home page.html">HOME</a></li>
+        <li><a href="Aboutus.html">ABOUT US</a></li>
+        <li><a href="contact form.html">CONTACT US</a></li>
+        <li><a href="index2.html">PRODUCTS</a></li>
+  
+      </ul>
+    </nav><h5 style="font-family: Helvetica;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Hello welcome to our ecommerce website.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Our Group Name:Mr online store butwal<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ We Created This Website To Fullfill The Needs and demand of Users on this platform<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Consumers and Users Would be satisfied if they buy our Products, also consumers can buy our products in an affordable price. </h5>
+
+</body>
+</html>
