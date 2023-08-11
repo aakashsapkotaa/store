@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <title>MR Online School</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 70%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  max-width: 1824px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .box {
+    padding: 0 48px;
+  }
+}
+
+.add-to-cart {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .add-to-cart:hover{
+ background-color:rgba(52, 4, 4, 0.379);
+  }
+
+/* HEADER */
+ .logo b{
+ width: 100px;
+ height: 80px;
+ cursor: pointer;
+ }
+ 
+ nav{
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+ }
+ 
+ nav ul li a{
+     text-decoration: none;
+     color: #606163;
+ }
+ 
+ nav ul li a:hover{
+     color: #ff4321;
+ } 
+
+ .d {
+  display: flex;
+  align-items: center;
+}
+
+
+ .align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ @media only screen and (max-width: 768px) {
+  nav {
+    padding: 16px 0;
+  }
+
+
+  .icons{
+    display: none;
+  }
+
+ 
+  .logob{
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    } 
+  }
+
+/* Intro */
+.intro {
+  height: calc(100vh - 150);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: lightgray;
+  background-image: url('wallet.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  background-size: 100% 100%;
+/*background-blend-mode: overlay;*/
+}
+
+.intro-content {
+  height: 100%;
+}
+
+
+
+.dis {
+  display: inline-block;
+  font-size: 40px;
+  color: #ff4321;
+}
+
+.intro h1 {
+  margin-top: 50px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+}
+
+.intro h2 {
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+}
+
+
+.intro  h3 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 80px;
+  background-color: #ff4321;
+  padding: 20px 80px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+  margin-top: 65px;
+  margin-left: 550px;
+}
+.btn:hover{
+  color: #000;
+  border: black;
+
+}
+/* Benefits */
+.benefit-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 80px;
+}
+
+.benefit {
+  border: 1px solid #ccc;
+  padding: 16px 16px 32px 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefit .icon {
+  color:  #ff4321;
+  font-size: 64px;
+}
+
+.benefit h4 {
+  margin-bottom: 5px;
+}
+
+.benefit .text {
+  font-size: 24px;
+  color: #777;
+}
+
+/* New Arrivals */
+.h {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+
+.h h1 {
+  font-weight: 400;
+}
+
+.h span {
+  color:  #ff4321;
+}
+
+.ac-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.ac {
+  text-align: center;
+  padding-bottom: 16px;
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ac .img-cover {
+  overflow: hidden;
+}
+
+.ac img {
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover img {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 567px) {
+  .h {
+    font-size: 32px;
+  }
+}
+
+.ab {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 4vw);
+  gap: 2rem;
+}
+
+.ab .item {
+  overflow: hidden;
+}
+
+.ab img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 500ms ease-out;
+}
+
+.ab .item-1 img {
+  object-fit: fill;
+}
+
+.ab img:hover {
+  transform: scale(1.2);
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+
+.item-2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.item-4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallary {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(20, 4vw);
+  }
+
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+
+  .item-2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 11;
+  }
+  .item-3 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 15;
+  }
+  .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 15;
+    grid-row-end: 19;
+  }
+}
+    
+    /*footer*/
+    footer{
+  background: black;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer::before{
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .top .logo-details{
+  color: #fff;  
+  font-size: 30px;
+}
+.content .top .media-icons{
+  display: flex;
+}
+.content .top .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(5):hover{
+  color: #FF0000;
+  background: #fff;
+}
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: black;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+  background: black;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+.copyright_text p{
+  padding-left: 450px;
+}
+  </style>
+</head>
+
+<body>
+  
+  <!-- HEADER -->
+
+ <header class="header">
+  <nav>
+   <a href="Home page.html"><img src="logo1.png" height="200px" width="250px" class="logob"></a>
+    <ul>
+        <li><a href="Home page.html">HOME</a></li>
+        <li><a href="Aboutus.html">ABOUT US</a></li>
+        <li><a href="contact form.html">CONTACT US</a></li>
+        <li><a href="index2.html">PRODUCTS</a></li>
+
+    </ul>
+    </nav>
+  <!-- Popular Products -->
+  <section class="section">
+    <div class="h">
+      <h1>Mobiles <span>Items</span></h1>
+    </div>
+    <div class="ac-center box">
+      <div class="ac">
+        <div class="img-cover">
+          <a href="payment.html"><img src="iphone.jpg" alt="" /></a>
+        </div>
+        <p>Iphone 14 Pro Max</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">NRP 200000</div>
+        <a href="payment.html"><button class="add-to-cart">Buy Now</button></a>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <a href="payment.html"><img src="Oneplus.jpg" alt="" /></a>
+        </div>
+        <p>One Plus Nord CE2</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">NRP 50000</div>
+        <a href="payment.html"><button class="add-to-cart">Buy Now</button></a>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <a href="payment.html"><img src="samsung.jpg" alt="" /></a>
+        </div>
+        <p>Samsung Galaxy A53 5G</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">NRP 60000</div>
+        <a href="payment.html"><button class="add-to-cart">Buy Now</button></a>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <a href="payment.html"><img src="realmi.jpg" alt="" /></a>
+        </div>
+        <p>Realmi GT2 Pro</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">NRP 100000</div>
+        <a href="payment.html"><button class="add-to-cart">Buy Now</button></a>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <a href="payment.html"><img src="mi.jpg" alt="" /></a>
+        </div>
+        <p>MI Note 11 Pro</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">NRP 45000</div>
+        <a href="payment.html"><button class="add-to-cart">Buy Now</button></a>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <a href="payment.html"><img src="Nokia.png" alt="" /></a>
+        </div>
+        <p>Nokia 105 DUIL SIM</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">NRP 1600</div>
+        <a href="payment.html"><button class="add-to-cart">Buy Now</button></a>
+      </div>
+    </div>
+    
+  </div>
+
+  </section>
+
+        <!-----footer-------------------->
+        <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <span class="logo_name">Mr.Online Store Butwal</span>
+              </div>
+              <div class="media-icons">
+                <a href="https://www.facebook.com/lover.101m" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/aakashsapkotaa" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/aakashsapkotaa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aakash-sapkota-02458b244/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@aakashsapkotaa/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="bottom-details">
+            <div class="bottom_text">
+              <span class="copyright_text"> All Rights Recived<p>Copyright &copy; 2023 Mr.Online Store Butwal</p></a></span>
+              <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+              </span>
+            </div>
+          </div>
+        </footer>
+</body>
+
+</html>
